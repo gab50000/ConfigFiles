@@ -12,7 +12,6 @@ Plugin 'supertab'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'christoomey/vim-titlecase'
 Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
