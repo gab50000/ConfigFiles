@@ -24,6 +24,8 @@ autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set modeline
 set updatetime=750
 set number
+set incsearch
+set ignorecase smartcase
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
