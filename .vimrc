@@ -13,6 +13,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'aperezdc/vim-template'
 
 call vundle#end()
 filetype plugin indent on
