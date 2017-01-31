@@ -14,6 +14,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'aperezdc/vim-template'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,4 +39,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 
-autocmd filetype python Tagbar 
+autocmd filetype python Tagbar
