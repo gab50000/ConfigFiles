@@ -1,0 +1,30 @@
+set nocompatible
+filetype off
+filetype plugin indent on
+
+syntax on
+set background=dark
+autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set modeline
+set updatetime=750
+set number
+set incsearch
+set ignorecase smartcase
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['flake8']
+
+autocmd filetype python Tagbar
+
+let no_buffers_menu=1
+if !exists('g:not_finish_vimplug')
+  colorscheme molokai
+endif
