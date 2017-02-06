@@ -12,6 +12,10 @@ set number
 set incsearch
 set ignorecase smartcase
 
+set ttyfast
+set mouse=a
+set ttymouse=xterm
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
