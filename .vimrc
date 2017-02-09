@@ -46,6 +46,7 @@ Plug 'lervag/vimtex'
 Plug 'scrooloose/syntastic'
 Plug 'supertab'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'matze/vim-tex-fold'
 
 let g:make = 'gmake'
 if exists('make')
@@ -267,8 +268,7 @@ endif
 "*****************************************************************************
 if !exists('*s:setupWrapping')
   function s:setupWrapping()
-    set wrap
-    set wm=2
+    set wrap linebreak nolist
     set textwidth=100
   endfunction
 endif
