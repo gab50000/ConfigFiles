@@ -3,6 +3,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 filetype indent plugin on
@@ -14,3 +15,5 @@ set smartcase
 set number
 set incsearch
 set hlsearch
+
+" set spell spelllang=en_us
