@@ -34,3 +34,6 @@ autocmd BufWritePre *.py execute ':Black'
 
 " Command-T mappings
 noremap <C-p> :execute 'CommandT'<CR>
+
+" Tagbar shortcut
+noremap tb :execute 'Tagbar'<CR>
