@@ -31,3 +31,6 @@ noremap <A-Right> gt
 
 " Black autoformatting on save
 autocmd BufWritePre *.py execute ':Black'
+
+" Command-T mappings
+noremap <C-p> :execute 'CommandT'<CR>
