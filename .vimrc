@@ -20,4 +20,6 @@ set number
 set incsearch
 set hlsearch
 
-" set spell spelllang=en_us
+" move current tab to left/right
+noremap <Leader><Left>  :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+noremap <Leader><Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
