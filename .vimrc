@@ -7,6 +7,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/tagbar'
 Plug 'wincent/command-t'
+Plug 'psf/black'
 call plug#end()
 
 filetype indent plugin on
@@ -27,3 +28,6 @@ noremap <A-S-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 " switch tabs
 noremap <A-Left> gT
 noremap <A-Right> gt
+
+" Black autoformatting on save
+autocmd BufWritePre *.py execute ':Black'
