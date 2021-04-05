@@ -35,5 +35,9 @@ autocmd BufWritePre *.py execute ':Black'
 " Command-T mappings
 noremap <C-p> :execute 'CommandT'<CR>
 
+" Command-T ignore directories
+set wildignore+=*/__pycache__
+
 " Tagbar shortcut
 noremap tb :execute 'Tagbar'<CR>
+
