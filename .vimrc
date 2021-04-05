@@ -21,9 +21,9 @@ set incsearch
 set hlsearch
 
 " move current tab to left/right
-noremap <A-Left>  :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-noremap <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+noremap <A-S-Left>  :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+noremap <A-S-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
 " switch tabs
-noremap <A-PageUp> gT
-noremap <A-PageDown> gt
+noremap <A-Left> gT
+noremap <A-Right> gt
