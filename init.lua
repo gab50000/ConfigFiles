@@ -12,4 +12,5 @@ require "paq" {
 
 vim.api.nvim_set_keymap('n', '<C-s>', ':write<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<C-p>', ':Telescope find_files<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<S-f>', ':Telescope live_grep<CR>', {noremap = true})
 
